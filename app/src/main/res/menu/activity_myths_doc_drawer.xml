@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_myth_intro"
+                android:icon="@mipmap/ic_label_white_24dp"
+                android:title="@string/intro_title" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myth_circadien"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/myth_circadien_title" />
+        <item
+            android:id="@+id/nav_myth_osirien"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/myth_osiris_title" />
+        <item
+            android:id="@+id/nav_myth_mort"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/myth_mort_title" />
+    </group>
+
+</menu>

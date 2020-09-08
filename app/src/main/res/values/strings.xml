@@ -1,0 +1,320 @@
+<resources>
+
+    <string name="app_name">Egyptian Mythology</string>
+    <string name="app_version" translatable="false">v1.3.2</string>
+    <string name="lang">en</string>
+
+    <string name="quiz" translatable="false">Quiz</string>
+    <string name="scores" translatable="false">Scores</string>
+    <string name="ankh" translatable="false">ankh</string>
+    <string name="times" translatable="false">x</string>
+    <string name="three" translatable="false">3</string>
+    <string name="doc" translatable="false">Documentation</string>
+    <string name="cosmogonies" translatable="false">Cosmogonies</string>
+    <string name="title_activity_gods_doc" translatable="false">GodsDocActivity</string>
+    <string name="title_activity_cosmogonies_doc" translatable="false">CosmogoniesDocActivity</string>
+    <string name="title_activity_myths_doc" translatable="false">MythsDocActivity</string>
+    <string name="doc_title" translatable="false">Documentation</string>
+    <string name="intro_title" translatable="false">Introduction</string>
+    <string name="main" translatable="false">Menu</string>
+    <string name="twenty" translatable="false">20</string>
+    <string name="anubis" translatable="false">Anubis</string>
+    <string name="bastet" translatable="false">Bastet</string>
+    <string name="hathor" translatable="false">Hathor</string>
+    <string name="horus" translatable="false">Horus</string>
+    <string name="isis" translatable="false">Isis</string>
+    <string name="min" translatable="false">Min</string>
+    <string name="neith" translatable="false">Neith</string>
+    <string name="nekhbet" translatable="false">Nekhbet</string>
+    <string name="osiris" translatable="false">Osiris</string>
+    <string name="ptah" translatable="false">Ptah</string>
+    <string name="sekhmet" translatable="false">Sekhmet</string>
+    <string name="selkis" translatable="false">Selkis</string>
+    <string name="seth" translatable="false">Seth</string>
+    <string name="sobek" translatable="false">Sobek</string>
+    <string name="thot" translatable="false">Thot</string>
+    <string name="credits" translatable="false">Credits</string>
+    <string name="about_3" translatable="false">Images : Wikimedia Commons</string>
+    <string name="off" translatable="false">Off</string>
+    <string name="on" translatable="false">On</string>
+
+    <string name="about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="amemet">Amemet</string>
+    <string name="amon_re">Amun-Re</string>
+    <string name="best_score">Best Score :</string>
+    <string name="cancel">Cancel</string>
+    <string name="chou_tefnout"><![CDATA[Chu & Tefnut]]></string>
+    <string name="confirm_title">Confirmation</string>
+    <string name="congratulations">Congratulations !</string>
+    <string name="english">English</string>
+    <string name="exit_title">Exit</string>
+    <string name="french">French</string>
+    <string name="geb_nout"><![CDATA[Geb & Nut]]></string>
+    <string name="gods">Gods</string>
+    <string name="loading">Loading…</string>
+    <string name="maat">Maat</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="toShare">Share</string>
+    <string name="yes">Yes</string>
+    <string name="settings">Settings</string>
+    <string name="myths">Myths</string>
+    <string name="bes">Bes</string>
+    <string name="bravo">Well done!</string>
+    <string name="changeLang">Change the language</string>
+    <string name="confirm_msg">Delete all your scores</string>
+    <string name="delete">Clear</string>
+    <string name="hapi">Hapi</string>
+    <string name="khnoum">Khnum</string>
+    <string name="khonsou">Khonsu</string>
+    <string name="langLabel">Language</string>
+    <string name="letsPlay">Let\'s\tplay!</string>
+    <string name="main_gods">The main gods</string>
+    <string name="mout">Mut</string>
+    <string name="music">Music</string>
+    <string name="no_score">No score !</string>
+    <string name="cosmogonies_share">Throughout history, Men have sought to explain, to imagine the origin of the world, the moment when Creation takes place and gives birth to Men, animals, plants, all living things, water, land, etc., the ancient Egyptians are no exception… \n Learn more about Egyptian cosmogonies with this application: %1$s</string>
+    <string name="exit_msg">Are you sure you want to leave the application?</string>
+    <string name="gods_share">The deities were omnipresent in the daily life of the Egyptian people and they sought in these deities, support and protection against the forces of evil… Learn more about the Egyptian gods with this application: %1$s</string>
+    <string name="heliopolis_title">Heliopolis Cosmogony</string>
+    <string name="hermopolis_title">Hermopolis Cosmogony</string>
+    <string name="memphis_title">Memphis Cosmogony</string>
+    <string name="myth_circadien_title">Myth of the Day Cycle</string>
+    <string name="myth_mort_title">The myth of death</string>
+    <string name="myth_osiris_title">Osirian myth</string>
+    <string name="myths_share">Myths are intended to explain the origins of a belief and they take an important place in ancient Egyptian civilization because ancient Egyptians sought to interpret all the phenomena they could observe through the prism of beliefs… \n Learn more about the main Egyptian myths with this application: %1$s</string>
+    <string name="navigation_drawer_close">Close the navigation drawer</string>
+    <string name="navigation_drawer_open">Open the navigation drawer</string>
+    <string name="nephtys">Nephthys</string>
+    <string name="ouadjet">Wadjet</string>
+    <string name="progress">Progress</string>
+    <string name="quiz_finish_txt">You have completed the quiz! You are an ace of Egyptian mythology.</string>
+    <string name="re">Re</string>
+    <string name="replay">Replay</string>
+    <string name="score_record">Score record</string>
+    <string name="scores_progress">Score progression</string>
+    <string name="share_app_msg">Learn more about Egyptian mythology with this application! %1$s</string>
+    <string name="share_app_title">Share the application</string>
+    <string name="song">Sound</string>
+    <string name="thebes_title">Thebes Cosmogony</string>
+    <string name="toContact">Contact us</string>
+    <string name="toueris">Tueris</string>
+    <string name="instructions"><![CDATA[<br>* Answer the questions as fast as you can<br>* You have 20 seconds to answer each question<br>* You have 3 lives<br>* For 5 good answers in a row, you earn one life, but only if you have lost one<br>* The faster you answer, the more points you earn<br>]]></string>
+    <string name="error_occured">An error has occurred!</string>
+    <string name="q1">Who is the sovereign god and supreme judge of the Kingdom of the Dead</string>
+    <string name="q34_r0">Chu and Tefnut</string>
+    <string name="q34_r1">Geb and Nut</string>
+    <string name="q34_r2">Osiris and Isis</string>
+    <string name="q34_r3">Nephtys and Set</string>
+    <string name="rate">Rate us</string>
+    <string name="q10">What is the god of the earth</string>
+    <string name="q100">What goddess fought Apophis in the Duat after Re\'s death</string>
+    <string name="q101">Under the reign of which pharaoh the cult of Aten supplanted that of the other gods</string>
+    <string name="q11">What is the goddess of heaven</string>
+    <string name="q12">What is the name of Osiris\' wife</string>
+    <string name="q13">What is the name of the wife of the god Seth</string>
+    <string name="q14">How many gods have Geb and Nut given birth</string>
+    <string name="q15">What is the name of the magician goddess and wife of Osiris</string>
+    <string name="q16">What is the name of the sun god when he is the rising sun</string>
+    <string name="q17">What is the name of the sun god when he is the midday sun</string>
+    <string name="q18">What is the name of the sun god when he is the setting sun</string>
+    <string name="q19">What is the god of evil, anger and uncontrolled passions</string>
+    <string name="q2">Who is the god at the top of the great ennead of the nine main gods</string>
+    <string name="q20">What is the goddess wife of Seth and protector of the dead</string>
+    <string name="q21">What god is the result of the union of Osiris and Nephthys</string>
+    <string name="q22">How many pieces is Osiris\' body cut up by his brother Seth</string>
+    <string name="q23">What god is the result of the union of Osiris and Isis</string>
+    <string name="q24">What is the god of craftsmen and architects</string>
+    <string name="q25">Who is the god who personifies the protective magic</string>
+    <string name="q26">Who is the god who personifies knowledge</string>
+    <string name="q27">Who is the god who personifies the creative verb</string>
+    <string name="q28">What is the god of paths</string>
+    <string name="q29">How many hours does the sun god take to cross the river of heaven</string>
+    <string name="q3">What is the name of the primordial ocean from which everything emerged?</string>
+    <string name="q30">Which is the beneficial snake that protects the sun god at the sixth hour of the crossing of the heavenly river</string>
+    <string name="q31">What goddess succeeds in obtaining the secret name of the god Ra</string>
+    <string name="q32">What is the name of the protective goddess that the sun god carries on his forehead</string>
+    <string name="q33">What is the name of the demiurge who emerged from the Nun to create everything</string>
+    <string name="q34">Who are the first children of Tem</string>
+    <string name="q35">What goddess swallows Ra in the evening to bring him into the world in the early morning</string>
+    <string name="q36">What is the god of death and rebirth</string>
+    <string name="q37">Which god replaces the sun god at night and is called the lunar god</string>
+    <string name="q38">What is the cross called as a symbol of life?</string>
+    <string name="q39">Which god was the very first to be mommified</string>
+    <string name="q4">What is the dark snake that the sun god must face every night</string>
+    <string name="q40">What is the animal representative of the goddess Hathor</string>
+    <string name="q40_r0">The cow</string>
+    <string name="q40_r1">The calf</string>
+    <string name="q40_r2">The dog</string>
+    <string name="q40_r3">The cat</string>
+    <string name="q41">What is the animal representative of the goddess Bastet</string>
+    <string name="q41_r0">The cat</string>
+    <string name="q41_r1">The cow</string>
+    <string name="q41_r2">The dog</string>
+    <string name="q41_r3">The lion</string>
+    <string name="q42">What is the representative animal of the goddess Sekhmet</string>
+    <string name="q42_r0">The lioness</string>
+    <string name="q42_r1">The dog</string>
+    <string name="q42_r2">The cat</string>
+    <string name="q42_r3">The tiger</string>
+    <string name="q43">What is the most common cosmogony? </string>
+    <string name="q44">What does the Djet correspond to in the individual?</string>
+    <string name="q44_r0">The body</string>
+    <string name="q44_r1">The soul</string>
+    <string name="q44_r2">The spirit</string>
+    <string name="q44_r3">The consciousness</string>
+    <string name="q45">What does Ka correspond to in the individual?</string>
+    <string name="q45_r0">The soul</string>
+    <string name="q45_r1">The body</string>
+    <string name="q45_r2">The spirit</string>
+    <string name="q45_r3">The consciousness</string>
+    <string name="q46">What ceremony allows the deceased\'s journey to the afterlife</string>
+    <string name="q46_r0">Embalming</string>
+    <string name="q46_r1">The funeral</string>
+    <string name="q46_r2">Mummification</string>
+    <string name="q46_r3">The bandage</string>
+    <string name="q47">What is the representative symbol of the goddess Ma\'at</string>
+    <string name="q47_r0">The feather</string>
+    <string name="q47_r1">The balance</string>
+    <string name="q47_r2">The sword</string>
+    <string name="q47_r3">The ankh</string>
+    <string name="q48">What is the animal representative of the god Horus</string>
+    <string name="q48_r0">The hawk</string>
+    <string name="q48_r1">The eagle</string>
+    <string name="q48_r2">The raven</string>
+    <string name="q48_r3">The sparrowhawk</string>
+    <string name="q49">What is the other animal representative of the god Thoth besides the ibis</string>
+    <string name="q49_r0">The baboon</string>
+    <string name="q49_r1">The jackal</string>
+    <string name="q49_r2">The dog</string>
+    <string name="q49_r3">The eagle</string>
+    <string name="q5">What is the name of the solar disk above the god Ra</string>
+    <string name="q50">What is the name given to the winged beetle pushing the solar disk</string>
+    <string name="q51">What goddess personifies the cosmic harmony put in place by the demiurge Tem </string>
+    <string name="q52">Which goddess is in charge of devouring unworthy souls when weighing the heart </string>
+    <string name="q53">What is the god of water and fertility</string>
+    <string name="q54">Which goddess whose representative animal is the hippopotamus</string>
+    <string name="q55">Which goddess whose representative animal is the cobra</string>
+    <string name="q56">Which god is at the centre of the myth of day and night</string>
+    <string name="q57">Which god is considered as the first of the pharaohs</string>
+    <string name="q58">Which god replaces Tem in the cosmogony of memphis</string>
+    <string name="q59">Who is the wife of the god Horus</string>
+    <string name="q6">What is the name given to the afterlife in Egyptian mythology</string>
+    <string name="q60">What is the god of tombs, necropolises and protector of embalmers</string>
+    <string name="q61">In what form does the sun god reborn every morning</string>
+    <string name="q62">Which member of Osiris\' body was swallowed by a fish</string>
+    <string name="q62_r1">His head</string>
+    <string name="q62_r0">His phallus</string>
+    <string name="q62_r2">His leg</string>
+    <string name="q62_r3">His arm</string>
+    <string name="q63">In the form of what mythical bird Tem emerged from the Nun</string>
+    <string name="q63_r0">The Bennu</string>
+    <string name="q63_r1">The Ibis</string>
+    <string name="q63_r2">The hawk</string>
+    <string name="q63_r3">The eagle</string>
+    <string name="q64">Which god was in charge of the separation of heaven from earth by Re </string>
+    <string name="q65">How many gods form the hermopolis ogdoad</string>
+    <string name="q66">How many couple of gods form the hermopolis ogdoad</string>
+    <string name="q67">The goddesses of the hermopolis ogdoad were represented as</string>
+    <string name="q67_r0">Snakes</string>
+    <string name="q67_r1">Frogs</string>
+    <string name="q67_r2">Monkeys</string>
+    <string name="q67_r3">Hawks</string>
+    <string name="q68">The gods of the hermopolis ogdoad were represented as</string>
+    <string name="q68_r0">Frogs</string>
+    <string name="q68_r1">Snakes</string>
+    <string name="q68_r2">Hawks</string>
+    <string name="q68_r3">Monkeys</string>
+    <string name="q69">What did the couple Nun and Nunet represent in the cosmogony of Hermopolis</string>
+    <string name="q69_r0">The water</string>
+    <string name="q69_r1">The mysterious</string>
+    <string name="q69_r2">The infinite</string>
+    <string name="q69_r3">The darkness</string>
+    <string name="q7">What is the name of the primordial hill</string>
+    <string name="q70">What did the couple Amun and Amunet represent in the cosmogony of Hermopolis</string>
+    <string name="q70_r0">The mysterious</string>
+    <string name="q70_r1">The water</string>
+    <string name="q70_r2">The infinite</string>
+    <string name="q70_r3">The darkness</string>
+    <string name="q71">What did the couple Heh and Hehet represent in the cosmogony of Hermopolis</string>
+    <string name="q71_r0">The infinite</string>
+    <string name="q71_r1">The water</string>
+    <string name="q71_r2">The mysterious</string>
+    <string name="q71_r3">The darkness</string>
+    <string name="q72">What did the couple Kek and Keket represent in the cosmogony of Hermopolis</string>
+    <string name="q72_r0">The darkness</string>
+    <string name="q72_r1">The water</string>
+    <string name="q72_r2">The mysterious</string>
+    <string name="q72_r3">The infinite</string>
+    <string name="q73">What name is given to the eye of Re whose tears gave birth to human beings</string>
+    <string name="q74">What a goddess the sun god sent to massacre the rebels who stood against him</string>
+    <string name="q75">Through what ordeal must the deceased go through in order to access eternal life</string>
+    <string name="q75_r0">Weighing the heart</string>
+    <string name="q75_r1">The celestial race</string>
+    <string name="q75_r2">The struggle of the gods</string>
+    <string name="q75_r3">The great illusion</string>
+    <string name="q76">What is the god of the sun at dawn and dusk</string>
+    <string name="q77">With which Ptah created man in the cosmogony of memphis</string>
+    <string name="q77_r0">The silt</string>
+    <string name="q77_r1">The dust</string>
+    <string name="q77_r2">The ashes</string>
+    <string name="q77_r3">The water</string>
+    <string name="q78">Which divinity represents the language of Ptah in the cosmogony of memphis</string>
+    <string name="q79">What do you call a headless demon from Hellenistic Egypt</string>
+    <string name="q79_r0">The Akephalos</string>
+    <string name="q79_r1">The sphinx</string>
+    <string name="q79_r2">The griffin</string>
+    <string name="q79_r3">The Sphinge</string>
+    <string name="q8">What is the god of dry air</string>
+    <string name="q80">What is the name of the cobra divinity whose function is to protect the pharaoh</string>
+    <string name="q81">What is the name of the chimera with a lion\'s body and a human head</string>
+    <string name="q81_r0">The sphinx</string>
+    <string name="q81_r1">The Nekhbet</string>
+    <string name="q81_r2">The Akephalos</string>
+    <string name="q81_r3">The Uraeus</string>
+    <string name="q82">What do you call a deceased person who has passed the heart weighing test</string>
+    <string name="q83">What does an individual\'s Ren mean?</string>
+    <string name="q83_r0">His name</string>
+    <string name="q83_r1">His soul</string>
+    <string name="q83_r2">His body</string>
+    <string name="q83_r3">His virtue</string>
+    <string name="q84">What does the word "Amun" mean?</string>
+    <string name="q84_r0">The hidden</string>
+    <string name="q84_r1">The invisible</string>
+    <string name="q84_r2">The King</string>
+    <string name="q84_r3">The former</string>
+    <string name="q85">What is the animal representative of the god anubis</string>
+    <string name="q85_r0">The jackal</string>
+    <string name="q85_r1">The dog</string>
+    <string name="q85_r2">The cat</string>
+    <string name="q85_r3">The wolf</string>
+    <string name="q86">What is the protective god of the family</string>
+    <string name="q87">Which god brought abundance and ensured the annual flood of the Nile which fertilized the earth</string>
+    <string name="q88">What god resulted from the union of the couple Amun and Mut</string>
+    <string name="q89">Which god is represented with an erect phallus and a crown surmounted by two feathers</string>
+    <string name="q9">What is the goddess of humid air</string>
+    <string name="q90">What was the counterpart of the cobra goddess Ouadjet in Upper Egypt</string>
+    <string name="q91">Which god gave the Egyptians the concept of Maat</string>
+    <string name="q92">What other goddess guards the royal sarcophagi and canopic chests with Isis, Nephthys and Neith</string>
+    <string name="q93">What goddess was the protector of women in childbirth</string>
+    <string name="q94">What other goddess guards the royal sarcophagi and canopic chests with Isis, Nephthys and Selkis</string>
+    <string name="q95">Which Egyptian goddess is often represented as a woman breastfeeding a child</string>
+    <string name="q96">What god taught men hieroglyphics</string>
+    <string name="q97">Which is the god whose name means "he who is above" and also "he who is far away"?</string>
+    <string name="q98">Which ram-headed god with horizontal horns is often depicted shaping humans on his turn</string>
+    <string name="q99">What is psychostasy in Egyptian mythology</string>
+    <string name="q99_r0">The weighing of the soul</string>
+    <string name="q99_r1">The journey of the soul</string>
+    <string name="q99_r2">The death of the soul</string>
+    <string name="q99_r3">The prison of the soul</string>
+    <string name="amon">Amun</string>
+    <string name="aton">Aten</string>
+    <string name="about_1">Development : Noe Gnanih</string>
+    <string name="about_2">Musics : Desert City - Kevin MacLeod, Desert Caravan</string>
+    <string name="copyright"><![CDATA[<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Egyptian Mythology</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://play.google.com/store/apps/dev?id=8961324953037023272" property="cc:attributionName" rel="cc:attributionURL">Neteru Studio</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.]]></string>
+    <string name="label_1">EGYPTIAN</string>
+    <string name="label_2">MYTHOLOGY</string>
+    <string name="score">Score : %1$d</string>
+
+</resources>

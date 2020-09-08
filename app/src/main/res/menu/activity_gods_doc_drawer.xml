@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_intro"
+                android:icon="@mipmap/ic_label_white_24dp"
+                android:title="@string/intro_title" />
+        </menu>
+    </item>
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_amemet"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/amemet" />
+        <item
+            android:id="@+id/nav_amon"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/amon" />
+        <item
+            android:id="@+id/nav_amon_re"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/amon_re" />
+        <item
+            android:id="@+id/nav_anubis"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/anubis" />
+        <item
+            android:id="@+id/nav_aton"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/aton" />
+        <item
+            android:id="@+id/nav_bastet"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/bastet" />
+        <item
+            android:id="@+id/nav_bes"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/bes" />
+        <item
+            android:id="@+id/nav_chou_tefnout"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/chou_tefnout" />
+        <item
+            android:id="@+id/nav_geb_nout"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/geb_nout" />
+        <item
+            android:id="@+id/nav_hapi"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/hapi" />
+        <item
+            android:id="@+id/nav_hathor"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/hathor" />
+        <item
+            android:id="@+id/nav_horus"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/horus" />
+        <item
+            android:id="@+id/nav_isis"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/isis" />
+        <item
+            android:id="@+id/nav_khnoum"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/khnoum" />
+        <item
+            android:id="@+id/nav_khonsou"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/khonsou" />
+        <item
+            android:id="@+id/nav_maat"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/maat" />
+        <item
+            android:id="@+id/nav_min"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/min" />
+        <item
+            android:id="@+id/nav_mout"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/mout" />
+        <item
+            android:id="@+id/nav_neith"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/neith" />
+        <item
+            android:id="@+id/nav_nekhbet"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/nekhbet" />
+        <item
+            android:id="@+id/nav_nephtys"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/nephtys" />
+        <item
+            android:id="@+id/nav_osiris"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/osiris" />
+        <item
+            android:id="@+id/nav_ouadjet"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/ouadjet" />
+        <item
+            android:id="@+id/nav_ptah"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/ptah" />
+        <item
+            android:id="@+id/nav_rê"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/re" />
+        <item
+            android:id="@+id/nav_sekhmet"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/sekhmet" />
+        <item
+            android:id="@+id/nav_selkis"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/selkis" />
+        <item
+            android:id="@+id/nav_seth"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/seth" />
+        <item
+            android:id="@+id/nav_sobek"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/sobek" />
+        <item
+            android:id="@+id/nav_thot"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/thot" />
+        <item
+            android:id="@+id/nav_touèris"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/toueris" />
+    </group>
+
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_pyramid"
+    tools:context=".activities.quiz.GameOverActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/deep_bg_gradient_black"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient_black">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_gradient_black"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_anubis"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:textSize="42sp"
+                android:id="@+id/congrat"
+                android:visibility="gone"
+                android:textColor="@color/goldenYellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.neteru.ankh.classes.Typewriter
+                android:gravity="center"
+                android:textSize="21sp"
+                android:visibility="gone"
+                android:id="@+id/quizFinish"
+                android:textColor="@color/yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.neteru.ankh.classes.Typewriter
+            android:id="@+id/yourScore"
+            android:gravity="center"
+            android:textColor="@color/goldenRod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/deep_bg_gradient_black"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text="@string/score_record"
+            android:id="@+id/recordLabel"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/limegreen"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_gradient_black"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/replay"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_replay_white_24dp"
+            android:contentDescription="@string/replay"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/main"
+            android:clickable="true"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/main"
+            android:src="@mipmap/ic_home_white_24dp"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/stats"
+            android:clickable="true"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_timeline_white_24dp"
+            android:contentDescription="@string/scores"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

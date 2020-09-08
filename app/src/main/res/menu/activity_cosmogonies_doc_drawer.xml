@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_cosmogony_intro"
+                android:icon="@mipmap/ic_label_white_24dp"
+                android:title="@string/intro_title" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cosmogony_heliopolis"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/heliopolis_title" />
+        <item
+            android:id="@+id/nav_cosmogony_hermopolis"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/hermopolis_title" />
+        <item
+            android:id="@+id/nav_cosmogony_memphis"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/memphis_title" />
+        <item
+            android:id="@+id/nav_cosmogony_thebes"
+            android:icon="@mipmap/ic_label_outline_white_24dp"
+            android:title="@string/thebes_title" />
+    </group>
+
+</menu>

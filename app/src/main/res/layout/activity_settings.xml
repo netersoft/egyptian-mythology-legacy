@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_pyramid"
+    tools:context=".activities.other.SettingsActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:background="@drawable/bg_gradient_black">
+
+        <ImageView
+            android:src="@drawable/thot"
+            android:contentDescription="@string/app_name"
+            android:layout_width="250dp"
+            android:layout_height="250dp" />
+
+        <RelativeLayout
+            android:background="@drawable/bg_gradient_black"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/songLabel"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/song"
+                android:layout_toStartOf="@+id/switchSong"
+                android:layout_toLeftOf="@+id/switchSong"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/yellow"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchSong"
+                app:showText="true"
+                android:checked="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:theme="@style/switchStyle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:textOff="@string/off"
+                android:textOn="@string/on"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_gradient_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/musicLabel"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/music"
+                android:layout_toLeftOf="@+id/switchMusic"
+                android:layout_toStartOf="@+id/switchMusic"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/yellow"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchMusic"
+                app:showText="true"
+                android:checked="true"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:theme="@style/switchStyle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:textOff="@string/off"
+                android:textOn="@string/on"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/langSetting"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_gradient_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/langLabel"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/langLabel"
+                android:layout_toLeftOf="@+id/selectLang"
+                android:layout_toStartOf="@+id/selectLang"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/yellow"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/selectLang"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/goldenRod"
+                android:drawableRight="@mipmap/ic_arrow_drop_down_white_24dp"
+                android:drawableEnd="@mipmap/ic_arrow_drop_down_white_24dp"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:paddingLeft="0dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
