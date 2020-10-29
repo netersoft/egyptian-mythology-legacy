@@ -128,7 +128,8 @@ public class Resources {
 
     public void initQuiz(){
         int[] renegades = new int[]{34,40,41,42,44,45,46,47,48,49,62,63,67,68,69,70,71,72,75,77,79,81,83,84,85,99};
-        if (PreferenceManager.getDefaultSharedPreferences(context).getString("lang", context.getString(R.string.lang)).equals("fr")){
+        String lang = PreferenceManager.getDefaultSharedPreferences(context).getString("lang", context.getString(R.string.lang));
+        if (lang != null && lang.equals("fr")){
 
             for (String[] re : res) {
                 dbManager.db_insertQuiz(new Quiz(re[0], re[1], re[2], re[3], re[4], re[5]));
@@ -139,7 +140,10 @@ public class Resources {
             for (int i = 0; i < res.length; i++) {
                 boolean renegade = false;
                 for(int j : renegades){
-                    if (i == j-1){ renegade = true; }
+                    if (i == j - 1) {
+                        renegade = true;
+                        break;
+                    }
                 }
 
                 if (renegade){

@@ -19,7 +19,7 @@ public class ScoresAdapter extends RecyclerView.Adapter<ScoresAdapter.MyViewHold
     private int rowLayout;
     private List<Scores> scoresList;
 
-    class MyViewHolder extends RecyclerView.ViewHolder {
+    static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView date, score;
 
         MyViewHolder(View view) {

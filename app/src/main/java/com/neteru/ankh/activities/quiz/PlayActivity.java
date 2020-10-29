@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -25,6 +24,8 @@ import com.neteru.ankh.classes.LoadingDialog;
 import com.neteru.ankh.classes.databases.DbManager;
 import com.neteru.ankh.classes.models.Quiz;
 import com.neteru.ankh.classes.services.MusicService;
+import com.neteru.ankh.classes.utils.async.BaseTask;
+import com.neteru.ankh.classes.utils.async.TaskRunner;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -71,7 +72,7 @@ public class PlayActivity extends AnkhBaseActivity {
 
         butList = new Button[]{answer_1, answer_2, answer_3, answer_4};
 
-        new recupTask(PlayActivity.this).execute();
+        new TaskRunner().executeAsync(new RecupTask(PlayActivity.this));
 
         answer_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -312,36 +313,36 @@ public class PlayActivity extends AnkhBaseActivity {
         super.onStop();
     }
 
-    @SuppressLint("StaticFieldLeak")
-    class recupTask extends AsyncTask<String, Void, Void>{
-        private Context context;
+    class RecupTask extends BaseTask<Object>{
+
         private LoadingDialog loadingDialog;
 
-        recupTask(Context ctx){
-            context = ctx;
-            loadingDialog = new LoadingDialog(context);
+        RecupTask(Context ctx){
+            loadingDialog = new LoadingDialog(ctx);
         }
 
         @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-
+        public void setUiForLoading() {
             loadingDialog.show();
         }
 
         @Override
-        protected Void doInBackground(String... strings) {
+        public Object call() {
+
             getQuizList();
 
             return null;
+
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
+        public void setDataAfterLoading(Object result) {
 
             if (loadingDialog.isShowing()) { loadingDialog.dismiss(); }
+
             next();
+
         }
+
     }
 }

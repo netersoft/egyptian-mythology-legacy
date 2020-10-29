@@ -39,15 +39,19 @@ public class MusicService extends Service {
             if(player == null) {
                 Log.v(TAG, "Create() on MediaPlayer failed.");
             } else {
-                player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                try{
 
-                    @Override
-                    public void onCompletion(MediaPlayer mediaplayer) {
-                        mediaplayer.stop();
-                        mediaplayer.release();
-                    }
-                });
-                player.start();
+                    player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+                        @Override
+                        public void onCompletion(MediaPlayer mediaplayer) {
+                            mediaplayer.stop();
+                            mediaplayer.release();
+                        }
+                    });
+                    player.start();
+
+                } catch (Exception ignored){ }
             }
         }
 
@@ -55,7 +59,7 @@ public class MusicService extends Service {
     }
 
     public void onDestroy() {
-        if (player.isPlaying()) {
+        if (player != null && player.isPlaying()) {
             player.stop();
             player.release();
             stopSelf();

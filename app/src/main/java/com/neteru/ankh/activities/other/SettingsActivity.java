@@ -1,13 +1,11 @@
 package com.neteru.ankh.activities.other;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
@@ -27,6 +25,8 @@ import com.neteru.ankh.classes.AppUtilities;
 import com.neteru.ankh.classes.LoadingDialog;
 import com.neteru.ankh.classes.Resources;
 import com.neteru.ankh.classes.services.MusicService;
+import com.neteru.ankh.classes.utils.async.BaseTask;
+import com.neteru.ankh.classes.utils.async.TaskRunner;
 
 public class SettingsActivity extends AnkhBaseActivity {
     private AlertDialog dialog;
@@ -51,7 +51,11 @@ public class SettingsActivity extends AnkhBaseActivity {
         TextView currentLang = findViewById(R.id.selectLang);
         languages = new CharSequence[]{getString(R.string.french), getString(R.string.english)};
 
-        currentLang.setText(preferences.getString("lang", getString(R.string.lang)).equals("en") ? R.string.english : R.string.french);
+        String lang = preferences.getString("lang", getString(R.string.lang));
+
+        if (lang == null) lang = getString(R.string.lang);
+
+        currentLang.setText(lang.equals("en") ? R.string.english : R.string.french);
 
         Drawable drawable = ContextCompat.getDrawable(this, R.mipmap.ic_arrow_drop_down_white_24dp);
         if (drawable != null) {
@@ -65,10 +69,14 @@ public class SettingsActivity extends AnkhBaseActivity {
             @Override
             public void onClick(View view) {
 
+                String lang = preferences.getString("lang", getString(R.string.lang));
+
+                if (lang == null) lang = getString(R.string.lang);
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this, R.style.CustomDialogTheme)
                         .setCancelable(true)
                         .setTitle(R.string.changeLang)
-                        .setSingleChoiceItems(languages, preferences.getString("lang", getString(R.string.lang)).equals("fr") ? 0 : 1, new DialogInterface.OnClickListener() {
+                        .setSingleChoiceItems(languages, lang.equals("fr") ? 0 : 1, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -143,7 +151,7 @@ public class SettingsActivity extends AnkhBaseActivity {
         startService(new Intent(SettingsActivity.this, MusicService.class));
 
         if (preferences.getBoolean("db_rewriter", false)){
-            new resetDB(SettingsActivity.this).execute();
+            new TaskRunner().executeAsync(new ResetDB(SettingsActivity.this));
 
             editor.putBoolean("db_rewriter", false).apply();
         }
@@ -162,20 +170,19 @@ public class SettingsActivity extends AnkhBaseActivity {
         }
     }
 
-    @SuppressLint("StaticFieldLeak")
-    class resetDB extends AsyncTask<String, Void, Void>{
+    static class ResetDB extends BaseTask<Object>{
+
         private LoadingDialog loadingDialog;
         private Context context;
         private boolean result;
 
-        resetDB(Context ctx){
+        ResetDB(Context ctx){
             context = ctx;
             loadingDialog = new LoadingDialog(context);
         }
 
         @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
+        public void setUiForLoading() {
 
             result = true;
             loadingDialog.show();
@@ -183,7 +190,7 @@ public class SettingsActivity extends AnkhBaseActivity {
         }
 
         @Override
-        protected Void doInBackground(String... strings) {
+        public Object call() {
 
             if (Resources.getInstance(context).clearQuizTable()){
 
@@ -196,14 +203,16 @@ public class SettingsActivity extends AnkhBaseActivity {
             }
 
             return null;
+
         }
 
         @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
+        public void setDataAfterLoading(Object o) {
 
             if (loadingDialog.isShowing()){ loadingDialog.dismiss(); }
             if (!result){ Toast.makeText(context, R.string.error_occured, Toast.LENGTH_SHORT).show(); }
+
         }
+
     }
 }
