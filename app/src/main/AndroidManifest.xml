@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.neteru.ankh">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".classes.Ankh"
         android:allowBackup="true"

@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "622873694312",
+    "firebase_url": "https://egyptianmythology-3baf3.firebaseio.com",
+    "project_id": "egyptianmythology-3baf3",
+    "storage_bucket": "egyptianmythology-3baf3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622873694312:android:726030fbe0e7eba3edabdd",
+        "android_client_info": {
+          "package_name": "com.neteru.ankh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622873694312-r3gl55lgjr32hfaetkvjk5u6g7suq5e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neteru.ankh",
+            "certificate_hash": "76fe5eae7c2fa40a83be13e2fe46abb476cedb85"
+          }
+        },
+        {
+          "client_id": "622873694312-04lfkrpslgho74qqiue8vh832l0rnpej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neteru.ankh",
+            "certificate_hash": "93f20a50c2a5bab6b86dcbdaa79b3af2bdd27f16"
+          }
+        },
+        {
+          "client_id": "622873694312-srljtcf731udkur8jm89ebp4dfh2pbqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neteru.ankh",
+            "certificate_hash": "1f3942dc3394b6c9162e5a486ae79445e433bbd4"
+          }
+        },
+        {
+          "client_id": "622873694312-83s2qtdhgh7fc56kjvsd1jqv48c25ls6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9bhkv5Iv4fXZyBiLrehiVqHr6LDykGpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622873694312-83s2qtdhgh7fc56kjvsd1jqv48c25ls6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

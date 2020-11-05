@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">Egyptian Mythology</string>
-    <string name="app_version" translatable="false">v1.3.4</string>
+    <string name="app_version" translatable="false">v1.3.5</string>
     <string name="lang">en</string>
 
     <string name="quiz" translatable="false">Quiz</string>

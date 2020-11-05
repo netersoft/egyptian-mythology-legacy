@@ -59,11 +59,14 @@ public class MusicService extends Service {
     }
 
     public void onDestroy() {
-        if (player != null && player.isPlaying()) {
-            player.stop();
-            player.release();
-            stopSelf();
-        }
+        try{
+            if (player != null && player.isPlaying()) {
+                player.stop();
+                player.release();
+                stopSelf();
+            }
+        } catch (Exception ignored){ }
+
         super.onDestroy();
     }
 }
